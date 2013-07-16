@@ -30,9 +30,17 @@ let in_array unit_f in_chan n =
     Array.init n (fun x -> unit_f in_chan);;
 
 
+let into_array unit_f in_chan a =
+    Array.iteri (fun pos v -> a.(pos) <- unit_f in_chan) a;;
+
+
 let in_array_int = in_array in_int;;
 let in_array_float = in_array in_float;;
 let in_array_string = in_array in_string;;
+
+let into_array_int = into_array in_int;;
+let floato_array_float = into_array in_float;;
+let stringo_array_string = into_array in_string;;
 
 
 let new_line out_chan =
