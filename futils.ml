@@ -51,3 +51,8 @@ let out_string out_chan x =
 
 let out_array unit_f out_chan a =
     Array.iter (unit_f out_chan) a;;
+
+
+let out_array_int = out_array out_int;;
+let out_array_float = out_array out_float;;
+let out_array_string = out_array out_string;;
