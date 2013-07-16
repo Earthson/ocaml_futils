@@ -39,8 +39,8 @@ let in_array_float = in_array in_float;;
 let in_array_string = in_array in_string;;
 
 let into_array_int = into_array in_int;;
-let floato_array_float = into_array in_float;;
-let stringo_array_string = into_array in_string;;
+let into_array_float = into_array in_float;;
+let into_array_string = into_array in_string;;
 
 
 let new_line out_chan =
