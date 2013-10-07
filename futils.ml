@@ -71,3 +71,5 @@ let test () =
     let ans = with_i (open_in "t_o") (fun ic -> in_array_int ic 10) in
     out_array_int stdout ((fun x -> match x with Some c -> c | None -> Array.make 0 0) ans);;
 
+
+let () = print_int 3;;
